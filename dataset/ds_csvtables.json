@@ -1,0 +1,31 @@
+{
+	"name": "ds_csvtables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sqlserver",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TABLE_SCHEMA": {
+				"type": "string"
+			},
+			"TABLE_NAME": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().TABLE_SCHEMA",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().TABLE_NAME",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

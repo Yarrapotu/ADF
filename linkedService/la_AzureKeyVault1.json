@@ -1,0 +1,11 @@
+{
+	"name": "la_AzureKeyVault1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://ravitela.vault.azure.net/"
+		}
+	}
+}
